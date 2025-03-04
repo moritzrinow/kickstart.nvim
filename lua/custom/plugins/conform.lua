@@ -6,8 +6,13 @@ return {
       javascript = { 'prettierd', 'prettier', stop_after_first = true },
     },
     format_on_save = {
-      timeout_ms = 500,
-      lsp_format = 'fallback',
+      timeout_ms = 2500,
+      lsp_fallback = true,
     },
   },
+  config = function(_, opts)
+    local conform = require 'conform'
+
+    conform.setup(opts)
+  end,
 }
