@@ -664,7 +664,6 @@ require('lazy').setup({
         'stylua', -- Used to format Lua code
         'delve', -- Go debugger
         'golangci-lint',
-        'netcoredbg', -- .NET debugger
         'prettier', -- Formatter
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
