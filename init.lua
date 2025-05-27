@@ -772,6 +772,7 @@ require('lazy').setup({
         lua = { 'stylua' },
         go = { 'goimports', 'gofmt' },
         terraform = { 'tofu_fmt', 'terraform_fmt' },
+        html = { 'prettier' },
         -- Conform can also run multiple formatters sequentially
         -- python = { "isort", "black" },
         --
